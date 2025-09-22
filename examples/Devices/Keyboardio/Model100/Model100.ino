@@ -650,24 +650,26 @@ void setup() {
   //                      (0, 7) (1, 7) (2, 7) (3, 7) | (3, 8) (2, 8)  (1, 8)  (0, 8)
   //                                           (3, 6) | (3, 9)
   COLORMAP_OVERLAYS(
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(0, 11), 23),  // 7
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(1, 11), 23),  // 4
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(2, 11), 23),  // 1
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(3, 11), 23),  // 0
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(0, 12), 23),  // 8
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(1, 12), 23),  // 5
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(2, 12), 23),  // 2
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(3, 12), 23),  // period
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(0, 13), 23),  // 9
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(1, 13), 23),  // 6
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(2, 13), 23),  // 3
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(3, 13), 23),  // multiply
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(0, 14), 23),  // substract
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(1, 14), 23),  // add
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(2, 14), 23),  // equals
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(3, 14), 23),  // divide
-    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(3, 15), 23),  // enter
-    )                                                           // COLORMAP_OVERLAYS(
+    // Numpad highlighting
+    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(1, 0), 23),
+    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(1, 1), 23),
+    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(1, 2), 23),
+    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(1, 3), 23),
+    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(1, 4), 23),
+    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(1, 5), 23),
+    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(2, 0), 23),
+    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(2, 1), 23),
+    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(2, 2), 23),
+    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(2, 3), 23),
+    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(2, 4), 23),
+    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(2, 5), 23),
+    kaleidoscope::plugin::Overlay(NUMPAD, KeyAddr(3, 5), 23),
+    // Mac modifiers highlighting
+    kaleidoscope::plugin::Overlay(5, KeyAddr(1, 7), 23),
+    kaleidoscope::plugin::Overlay(5, KeyAddr(2, 7), 23),
+    kaleidoscope::plugin::Overlay(5, KeyAddr(3, 7), 23),
+    kaleidoscope::plugin::Overlay(5, KeyAddr(3, 8), 23),
+  )
 
   // Set the hue of the boot greeting effect to something that will result in a
   // nice green color.
