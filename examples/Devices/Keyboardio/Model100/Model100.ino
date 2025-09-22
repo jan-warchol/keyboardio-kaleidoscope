@@ -400,13 +400,9 @@ const macro_t *macroAction(uint8_t macro_id, KeyEvent &event) {
 // Keyboardio Model 100.
 
 
-static kaleidoscope::plugin::LEDSolidColor solidRed(160, 0, 0);
-static kaleidoscope::plugin::LEDSolidColor solidOrange(140, 70, 0);
-static kaleidoscope::plugin::LEDSolidColor solidYellow(130, 100, 0);
-static kaleidoscope::plugin::LEDSolidColor solidGreen(0, 160, 0);
+static kaleidoscope::plugin::LEDSolidColor solidRed(130, 20, 20);
+static kaleidoscope::plugin::LEDSolidColor solidPeach(130, 80, 0);
 static kaleidoscope::plugin::LEDSolidColor solidBlue(0, 70, 130);
-static kaleidoscope::plugin::LEDSolidColor solidIndigo(0, 0, 170);
-static kaleidoscope::plugin::LEDSolidColor solidViolet(130, 0, 120);
 
 /** toggleLedsOnSuspendResume toggles the LEDs off when the host goes to sleep,
  * and turns them back on when it wakes up.
@@ -589,25 +585,10 @@ KALEIDOSCOPE_INIT_PLUGINS(
   // and slowly moves the rainbow across your keyboard
   LEDRainbowWaveEffect,
 
-  // The chase effect follows the adventure of a blue pixel which chases a red pixel across
-  // your keyboard. Spoiler: the blue pixel never catches the red pixel
-  LEDChaseEffect,
-
   // These static effects turn your keyboard's LEDs a variety of colors
-  solidRed,
-  solidOrange,
-  solidYellow,
-  solidGreen,
+  solidPeach,
   solidBlue,
-  solidIndigo,
-  solidViolet,
-
-  // The breathe effect slowly pulses all of the LEDs on your keyboard
-  LEDBreatheEffect,
-
-  // The AlphaSquare effect prints each character you type, using your
-  // keyboard's LEDs as a display
-  AlphaSquareEffect,
+  solidRed,
 
   // The stalker effect lights up the keys you've pressed recently
   StalkerEffect,
@@ -616,8 +597,8 @@ KALEIDOSCOPE_INIT_PLUGINS(
   // like Colormap below
   LEDPaletteTheme,
 
-  // The Colormap effect makes it possible to set up per-layer colormaps
-  ColormapEffect,
+  // // The Colormap effect makes it possible to set up per-layer colormaps
+  // ColormapEffect,
 
   // The colormap overlay plugin provides a way to set LED colors regardless of
   // the active LED effect. This is used for lighting up the keys assigned in
